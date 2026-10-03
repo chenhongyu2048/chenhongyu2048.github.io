@@ -1,133 +1,72 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hongyu Chen by chenhongyu2048</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-29643011-3', 'auto');
-      ga('send', 'pageview');
-    </script>
-
-    <!-- New GA4 tracking code, see https://support.google.com/analytics/answer/10271001#analyticsjs-enable-basic --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications by Hongyu Chen, including InfiniLoRA (ATC 2026) and Auto-Divide GNN (Euro-Par 2023), with paper figures and abstracts.">
+    <meta name="theme-color" content="#f5f7fa">
+    <title>Research | Hongyu Chen</title>
+    <link rel="stylesheet" href="stylesheets/styles.css?v=20261003">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GNJD50R0Z7');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GNJD50R0Z7');
     </script>
-
-    <!-- For all browsers -->
-    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
-    <link rel="stylesheet" href="assets/css/academicons.css"/>
-    
-    <style>
-      button.accordion {
-      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      cursor: pointer;
-      padding: 0px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 100%;
-      transition: 0.3s;
-      background-color: #f8f8f8;
-      }
-      button.accordion.active, button.accordion:hover {
-      background-color: #f8f8f8;
-      }
-      button.accordion:after {
-      content: " [+] ";
-      font-size: 90%;
-      color:#777;
-      float: left;
-      margin-left: 1px;
-      }
-
-      button.accordion.active:after {
-      content: " [\2212] ";
-      }
-      div.panel {
-      padding: 0 20px;
-      margin-top: 5px;
-      display: none;
-      background-color: white;
-      font-size: 100%;
-      }
-      div.panel.show {
-      display: block !important;
-      }
-      .social-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-    </style>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hongyu Chen</h1>
-        <p>Ph.D candidate<br>Shanghai JiaoTong University</p>
-        <p>Research Affiliate<br>Emerging Parallel Computing Center (EPCC)</p>
-    <h3><a href="https://chenhongyu2048.github.io/">Home</a></h3>
-    <h3><a href="https://chenhongyu2048.github.io/research.html">Research</a></h3>
-    <h3><a href="https://chenhongyu2048.github.io/personal.html">Personal</a></h3>
-    <h3><a href="https://chenhongyu2048.github.io/experience.html">Experience</a></h3> 
-    <h3><a href="https://chenhongyu2048.github.io/research/CV.pdf">CV</a></h3>  
-    <b>Social</b><br>
-        <div class="social-row">
-          <a href="mailto:chenhongyu2048@gmail.com" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
-          <a href="http://github.com/chenhongyu2048"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
-          <br>
-        </div>
-        <br>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <aside class="sidebar">
+      <a class="identity" href="index.html" aria-label="Hongyu Chen — home">
+        <span class="monogram" aria-hidden="true">HC<span></span></span>
+        <span class="profile-name">Hongyu Chen</span>
+      </a>
+      <p class="profile-role">Ph.D. candidate<br><a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a></p>
+      <p class="profile-affiliation">Research Affiliate<br><a href="http://epcc.sjtu.edu.cn/">Emerging Parallel Computing Center (EPCC)</a></p>
+      <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+<a href="research.html" aria-current="page">Research<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+<a href="experience.html">Experience<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+<a href="personal.html">Personal<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></nav>
+      <a class="cv-link" href="research/CV.pdf">Curriculum vitae <span aria-hidden="true">↗</span></a>
+      <div class="social-links">
+        <a href="mailto:chenhongyu2048@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>Email</span></a>
+        <a href="https://github.com/chenhongyu2048"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-5-2m10 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4 5.3 5.3 0 0 0-.1-4s-1.3-.4-4.2 1.5a14.4 14.4 0 0 0-7.6 0C3.3-.4 2 .0 2 .0a5.3 5.3 0 0 0-.1 4A5.7 5.7 0 0 0 .4 8c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 6.2 18v4" transform="translate(2 1) scale(.85)"/></svg><span>GitHub</span></a>
+      </div>
+      <p class="sidebar-note">Systems for machine learning.<br>Shanghai, China.</p>
+    </aside>
+      <main id="main-content">
+        <header class="page-heading"><p class="eyebrow">Research</p><h1>Publications</h1><p>Systems that make machine learning more efficient.</p></header>
+        <div class="section-heading" id="publications"><h2>Published &amp; Forthcoming Papers</h2></div><article class="paper-card" id="infinilora" aria-labelledby="infinilora-title">
+          <div class="paper-topline"><span class="paper-label">ATC 2026</span><span class="paper-topic">LLM inference</span></div>
+          <h2 id="infinilora-title">InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models</h2>
+          <p class="paper-authors"><strong>Hongyu Chen</strong>, Letian Ruan, Zilin Xu, Yuchen Li, Xinyu Chen, Bingsheng He, Jingwen Leng, Jieru Zhao, Shixuan Sun, Minyi Guo.</p>
+          <p class="paper-venue"><i>The 2026 ACM SIGOPS Annual Technical Conference.</i></p>
 
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-
-      </header>
-      <section>
-
-    <h2 id="publications"><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published &amp; Forthcoming Papers</h2>
-
-    <p id="infinilora" style="margin:0"> <b>InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models</b> <br> Hongyu Chen, Letian Ruan, Zilin Xu, Yuchen Li, Xinyu Chen, Bingsheng He, Jingwen Leng, Jieru Zhao, Shixuan Sun, Minyi Guo. <br> <i>The 2026 ACM SIGOPS Annual Technical Conference. </i> <br> [<a href="https://arxiv.org/abs/2604.07173">arXiv</a>] <button class="accordion">
-      Abstract 
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> LoRA enables efficient customization of LLMs and is widely used in multi-tenant and multi-task serving. However, emerging model architectures such as MoE significantly increase LoRA memory cost, making existing coupled LoRA serving designs poorly scalable and prone to tail-latency inflation. We present InfiniLoRA, a disaggregated LoRA serving system that decouples LoRA execution from base-model inference. InfiniLoRA introduces a shared LoRA Server with parallelism-aware execution, SLO-driven provisioning, and critical-path optimizations, including GPU-initiated communication and hardware-specialized LoRA kernels. Experiments show that InfiniLoRA can achieve an average 3.05x increase in serviceable request rate under strict latency SLOs, and improve the percentage of LoRA adapters satisfying the SLO requirement by 54.0%. </p></div><br>
-
-    <p style="margin:0"> <b>Auto-Divide GNN: Accelerating GNN Training with Subgraph Division</b> <br> Hongyu Chen*, Zhejiang Ran*, Keshi Ge, Zhiquan Lai, Jingfei Jiang, Dongsheng Li. <br> <i>The 29th International European Conference on Parallel and Distributed Computing. </i> <br> <button class="accordion">
-      Abstract 
-    </button>
-    <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;"><p> Graph Neural Networks (GNNs) have gained considerable attention in recent years for their exceptional performance on graph-structured data. Sampling-based GNN training is the most common method used for training GNNs on large-scale graphs, and it is often accelerated by caching feature data on the GPU. However, the emergence of more complex models and datasets with higher feature dimension requires more GPU memory for training, which limits the acceleration performance of GPU caching and can even result in out-of-memory errors. To release more GPU memory for the cache in a transparent way, we propose a subgraph division method, which trains several smaller micrographs instead of an entire subgraph at each training iteration. However, it is non-trivial to combine subgraph division with GPU caching due to the redundancy between micrographs. To tackle this challenge, we introduce an auto-profile method that searches for the best-performing subgraph division scheme based on training perception and probability analysis. Additionally, we develop an estimation-based caching strategy to lift the caching hitting rate against the diverse graph structures. These ideas are integrated to Auto-Divide GNN, a framework for accelerating sampling-based GNN training. The multi-GPU evaluations on three representative GNN models and five large graphs demonstrate that Auto-Divide GNN achieves significant speedups of up to 5.61x and 3.13x over two state-of-the-art GNN frameworks, DGL and PaGraph, respectively.  </p></div><br>
-
-      </section>
-    
+          <p class="paper-description">Decoupling LoRA execution from base-model inference for scalable, multi-tenant LLM serving.</p>
+          <figure class="paper-figure">
+            <a class="figure-link" href="assets/images/publications/infinilora-overview.png" target="_blank" rel="noopener" aria-label="Open full-size infinilora figure in a new tab"><img src="assets/images/publications/infinilora-overview.png" width="944" height="992" alt="InfiniLoRA Figure 7: base-model instances share a dedicated LoRA server, with communication overlapped with model computation." loading="lazy"></a>
+            <figcaption>Figure 7. System architecture and execution workflow. <a href="https://arxiv.org/pdf/2604.07173#page=5">Source paper <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <div class="paper-actions"><a class="button button-small" href="https://arxiv.org/abs/2604.07173">arXiv <span aria-hidden="true">↗</span></a><a class="button button-small button-quiet" href="https://arxiv.org/pdf/2604.07173">Paper PDF <span aria-hidden="true">↗</span></a></div>
+          <details class="paper-abstract"><summary>Abstract <span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>LoRA enables efficient customization of LLMs and is widely used in multi-tenant and multi-task serving. However, emerging model architectures such as MoE significantly increase LoRA memory cost, making existing coupled LoRA serving designs poorly scalable and prone to tail-latency inflation. We present InfiniLoRA, a disaggregated LoRA serving system that decouples LoRA execution from base-model inference. InfiniLoRA introduces a shared LoRA Server with parallelism-aware execution, SLO-driven provisioning, and critical-path optimizations, including GPU-initiated communication and hardware-specialized LoRA kernels. Experiments show that InfiniLoRA can achieve an average 3.05&times; increase in serviceable request rate under strict latency SLOs, and improve the percentage of LoRA adapters satisfying the SLO requirement by 54.0%.</p></div></details>
+        </article><article class="paper-card" id="auto-divide-gnn" aria-labelledby="auto-divide-gnn-title">
+          <div class="paper-topline"><span class="paper-label">Euro-Par 2023</span><span class="paper-topic">GNN training</span></div>
+          <h2 id="auto-divide-gnn-title">Auto-Divide GNN: Accelerating GNN Training with Subgraph Division</h2>
+          <p class="paper-authors"><strong>Hongyu Chen*</strong>, Zhejiang Ran*, Keshi Ge, Zhiquan Lai, Jingfei Jiang, Dongsheng Li.</p>
+          <p class="paper-venue"><i>The 29th International European Conference on Parallel and Distributed Computing.</i></p>
+          <p class="author-note">* Equal contribution.</p>
+          <p class="paper-description">Combining automatic subgraph division with GPU caching to accelerate sampling-based GNN training.</p>
+          <figure class="paper-figure">
+            <a class="figure-link" href="assets/images/publications/auto-divide-gnn-pipeline.png" target="_blank" rel="noopener" aria-label="Open full-size auto-divide-gnn figure in a new tab"><img src="assets/images/publications/auto-divide-gnn-pipeline.png" width="1404" height="248" alt="Auto-Divide GNN Figure 1: automatic profiling chooses a subgraph division scheme, then trains the model using micrographs." loading="lazy"></a>
+            <figcaption>Figure 1. Training pipeline of Auto-Divide GNN. <a href="https://ndownloader.figshare.com/files/41968170#page=6">Source paper <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <div class="paper-actions"><a class="button button-small" href="https://doi.org/10.1007/978-3-031-39698-4_25">Publication <span aria-hidden="true">↗</span></a><a class="button button-small button-quiet" href="https://ndownloader.figshare.com/files/41968170">Paper PDF <span aria-hidden="true">↗</span></a></div>
+          <details class="paper-abstract"><summary>Abstract <span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>Graph Neural Networks (GNNs) have gained considerable attention in recent years for their exceptional performance on graph-structured data. Sampling-based GNN training is the most common method used for training GNNs on large-scale graphs, and it is often accelerated by caching feature data on the GPU. However, the emergence of more complex models and datasets with higher feature dimension requires more GPU memory for training, which limits the acceleration performance of GPU caching and can even result in out-of-memory errors. To release more GPU memory for the cache in a transparent way, we propose a subgraph division method, which trains several smaller micrographs instead of an entire subgraph at each training iteration. However, it is non-trivial to combine subgraph division with GPU caching due to the redundancy between micrographs. To tackle this challenge, we introduce an auto-profile method that searches for the best-performing subgraph division scheme based on training perception and probability analysis. Additionally, we develop an estimation-based caching strategy to lift the caching hitting rate against the diverse graph structures. These ideas are integrated to Auto-Divide GNN, a framework for accelerating sampling-based GNN training. The multi-GPU evaluations on three representative GNN models and five large graphs demonstrate that Auto-Divide GNN achieves significant speedups of up to 5.61&times; and 3.13&times; over two state-of-the-art GNN frameworks, DGL and PaGraph, respectively.</p></div></details>
+        </article>
+        <footer class="site-footer"><span>&copy; Hongyu Chen</span><span>Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span></footer>
+      </main>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script> 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.parentNode.nextElementSibling.classList.toggle("show");
-      }
-    }
-    </script>
   </body>
 </html>
