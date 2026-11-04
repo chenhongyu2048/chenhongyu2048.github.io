@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Publications by Hongyu Chen, including InfiniLoRA (ATC 2026) and Auto-Divide GNN (Euro-Par 2023), with paper figures and abstracts.">
+    <meta name="description" content="Research by Hongyu Chen, including LiquidCP (arXiv 2026), InfiniLoRA (ATC 2026), and Auto-Divide GNN (Euro-Par 2023).">
     <meta name="theme-color" content="#f5f7fa">
     <title>Research | Hongyu Chen</title>
-    <link rel="stylesheet" href="stylesheets/styles.css?v=20261003">
+    <link rel="stylesheet" href="stylesheets/styles.css?v=20261104">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -38,6 +38,20 @@
     </aside>
       <main id="main-content">
         <header class="page-heading"><p class="eyebrow">Research</p><h1>Publications</h1><p>Systems that make machine learning more efficient.</p></header>
+        <div class="section-heading" id="preprints"><h2>Preprints</h2></div>
+        <article class="paper-card" id="liquidcp" aria-labelledby="liquidcp-title">
+          <div class="paper-topline"><span class="paper-label">arXiv 2026</span><span class="paper-topic">LLM training and inference</span></div>
+          <h2 id="liquidcp-title">LiquidCP: Decoupling Attention Tasks from Communication and Kernel Boundaries in Context Parallelism</h2>
+          <p class="paper-authors"><strong>Hongyu Chen</strong>, Yikang Ruan, Yuhai Long, Ziyu Huang, Yiyu Luo, Liukun Yu, Yangjie Zhou, Zihan Liu, Weihao Cui, Zijun Li, Anbang Wu, Yu Feng, Jing Yang, Jingwen Leng, Bingsheng He, Minyi Guo, Shixuan Sun.</p>
+          <p class="paper-venue"><i>arXiv preprint 2611.04401, November 2026.</i></p>
+          <p class="paper-description">A shared GPU execution engine for context-parallel attention in long-context training, prefill, and decoding.</p>
+          <figure class="paper-figure">
+            <a class="figure-link" href="assets/images/publications/liquidcp-task-model.png" target="_blank" rel="noopener" aria-label="Open full-size LiquidCP figure in a new tab"><img src="assets/images/publications/liquidcp-task-model.png" width="980" height="316" alt="LiquidCP Figure 5: Transfer, Compute, and Reduction tasks for ring context parallelism and decode context parallelism." loading="lazy"></a>
+            <figcaption>Figure 5. A common task model for training, full prefill, and decoding. <a href="https://arxiv.org/pdf/2611.04401v1#page=4">Source paper <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <div class="paper-actions"><a class="button button-small" href="https://arxiv.org/abs/2611.04401">arXiv <span aria-hidden="true">↗</span></a><a class="button button-small button-quiet" href="https://arxiv.org/pdf/2611.04401">Paper PDF <span aria-hidden="true">↗</span></a></div>
+          <details class="paper-abstract"><summary>Abstract summary <span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>LiquidCP schedules context-parallel attention as tile-level transfer, compute, and reduction tasks. MegaRing balances attention work and token counts and groups ready KV regions for training and full prefill. MegaDCP chooses how to split historical KV for decoding and mixed batches by accounting for both attention and its dependent reductions. Against the fastest baseline for each configuration on eight H100 GPUs, MegaRing speeds up core attention by 1.23&times; in the forward pass and 1.18&times; in the backward pass; MegaDCP reaches 1.20&times; on decode-only batches and 1.35&times; on mixed batches. In vLLM with prefix caching, LiquidCP improves time to first token by 1.22&times; on average.</p></div></details>
+        </article>
         <div class="section-heading" id="publications"><h2>Published &amp; Forthcoming Papers</h2></div><article class="paper-card" id="infinilora" aria-labelledby="infinilora-title">
           <div class="paper-topline"><span class="paper-label">ATC 2026</span><span class="paper-topic">LLM inference</span></div>
           <h2 id="infinilora-title">InfiniLoRA: Disaggregated Multi-LoRA Serving for Large Language Models</h2>
@@ -45,12 +59,12 @@
           <p class="paper-venue"><i>The 2026 ACM SIGOPS Annual Technical Conference.</i></p>
           <p class="paper-venue">Acceptance rate: <strong>13.9%</strong> (135/973).</p>
 
-          <p class="paper-description">Decoupling LoRA execution from base-model inference for scalable, multi-tenant LLM serving.</p>
+          <p class="paper-description">A shared LoRA server separates adapter execution from base-model inference and overlaps communication and computation across instances.</p>
           <figure class="paper-figure">
-            <a class="figure-link" href="assets/images/publications/infinilora-overview.png" target="_blank" rel="noopener" aria-label="Open full-size infinilora figure in a new tab"><img src="assets/images/publications/infinilora-overview.png" width="944" height="992" alt="InfiniLoRA Figure 7: base-model instances share a dedicated LoRA server, with communication overlapped with model computation." loading="lazy"></a>
-            <figcaption>Figure 7. System architecture and execution workflow. <a href="https://arxiv.org/pdf/2604.07173#page=5">Source paper <span aria-hidden="true">↗</span></a></figcaption>
+            <a class="figure-link" href="assets/images/publications/infinilora-overview.png" target="_blank" rel="noopener" aria-label="Open full-size InfiniLoRA figure in a new tab"><img src="assets/images/publications/infinilora-overview.png" width="944" height="1048" alt="InfiniLoRA Figure 6: base-model instances share a dedicated LoRA server and overlap communication with model computation." loading="lazy"></a>
+            <figcaption>Figure 6. System architecture and execution workflow. <a href="https://arxiv.org/pdf/2604.07173v2#page=5">Source paper <span aria-hidden="true">↗</span></a></figcaption>
           </figure>
-          <div class="paper-actions"><a class="button button-small" href="https://arxiv.org/abs/2604.07173">arXiv <span aria-hidden="true">↗</span></a><a class="button button-small button-quiet" href="https://arxiv.org/pdf/2604.07173">Paper PDF <span aria-hidden="true">↗</span></a></div>
+          <div class="paper-actions"><a class="button button-small" href="https://arxiv.org/abs/2604.07173">arXiv <span aria-hidden="true">↗</span></a><a class="button button-small button-quiet" href="https://arxiv.org/pdf/2604.07173v2">Camera-ready PDF <span aria-hidden="true">↗</span></a></div>
           <details class="paper-abstract"><summary>Abstract <span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>LoRA enables efficient customization of LLMs and is widely used in multi-tenant and multi-task serving. However, emerging model architectures such as MoE significantly increase LoRA memory cost, making existing coupled LoRA serving designs poorly scalable and prone to tail-latency inflation. We present InfiniLoRA, a disaggregated LoRA serving system that decouples LoRA execution from base-model inference. InfiniLoRA introduces a shared LoRA Server with parallelism-aware execution, SLO-driven provisioning, and critical-path optimizations, including GPU-initiated communication and hardware-specialized LoRA kernels. Experiments show that InfiniLoRA can achieve an average 3.05&times; increase in serviceable request rate under strict latency SLOs, and improve the percentage of LoRA adapters satisfying the SLO requirement by 54.0%.</p></div></details>
         </article><article class="paper-card" id="auto-divide-gnn" aria-labelledby="auto-divide-gnn-title">
           <div class="paper-topline"><span class="paper-label">Euro-Par 2023</span><span class="paper-topic">GNN training</span></div>

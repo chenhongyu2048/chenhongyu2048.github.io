@@ -3,9 +3,13 @@
 These PNGs are cropped screenshots rendered directly from the authors' public
 paper PDFs at 288 dpi. They retain the original diagram content and labels.
 
-- `infinilora-overview.png`: Figure 7, page 5 of *InfiniLoRA: Disaggregated
+- `infinilora-overview.png`: Figure 6, page 5 of *InfiniLoRA: Disaggregated
   Multi-LoRA Serving for Large Language Models*.
-  Source: https://arxiv.org/pdf/2604.07173
+  Source: https://arxiv.org/pdf/2604.07173v2
+  License: CC BY 4.0, as stated on the arXiv record.
+- `liquidcp-task-model.png`: Figure 5, page 4 of *LiquidCP: Decoupling Attention
+  Tasks from Communication and Kernel Boundaries in Context Parallelism*.
+  Source: https://arxiv.org/pdf/2611.04401v1
   License: CC BY 4.0, as stated on the arXiv record.
 - `auto-divide-gnn-pipeline.png`: Figure 1, page 6 of *Auto-Divide GNN:
   Accelerating GNN Training with Subgraph Division*.
